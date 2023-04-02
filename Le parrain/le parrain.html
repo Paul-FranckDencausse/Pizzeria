@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Le Parrain</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">ACCUEIL</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">à propos</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Ouvert de 10h à 22h</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><strong>Pizzeria<br>Le Parrain</strong></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><strong><b>Le<br>Parrain</b></strong></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Découvrez le menu</a></p>
+  </div>
+</header>
+
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizzas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salades</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Entrées</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">12,5€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches, mozzarella , basilic</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">15,5€</span></h1>
+      <p class="w3-text-grey">Quatre fromages (mozzarella , paremsan, pecorino, roquefort)</p>
+      <hr>
+      
+      <h1><b>Poulet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">17€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches, mozzarella , poulet , onions</p>
+      <hr>
+
+      <h1><b>La brasse sicilienne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">16,5€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches, mozzarella, bacon, ananas, surprise du chef</p>
+      <hr>
+
+      <h1><b>Carnaval</b> <span class="w3-tag w3-red w3-round">Chaud!</span><span class="w3-right w3-tag w3-dark-grey w3-round">20€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches, mozzarella, poivrons piquants, chorizo</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">Nouveau</span><span class="w3-right w3-tag w3-dark-grey w3-round">21,5€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches, mozzarella, parmesan, arugula/p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Populaire</span> <span class="w3-right w3-tag w3-dark-grey w3-round">13,5€</span></h1>
+      <p class="w3-text-grey">Sauce maison, mozzarella , boeuf haché</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">14,5€</span></h1>
+      <p class="w3-text-grey">Ravioli au fromage</p>
+      <hr>
+      
+      <h1><b>Spaghetti </b> <span class="w3-right w3-tag w3-dark-grey w3-round">11€</span></h1>
+      <p class="w3-text-grey">Tomates fraîches</p>
+      <hr>
+
+      <h1><b>Ce soir il dort avec les poissons</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25,5€</span></h1>
+      <p class="w3-text-grey">Saumon, crevettes , homard, Fred, ail</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Soupe du jour</b> <span class="w3-tag w3-grey w3-round">De saison</span><span class="w3-right w3-tag w3-dark-grey w3-round">5,5€</span></h1>
+      <p class="w3-text-grey">Demandez nous</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">8,5€</span></h1>
+      <p class="w3-text-grey">Toast au pesto</p>
+      <hr>
+      
+      <h1><b>Pain à l'ail</b> <span class="w3-right w3-tag w3-dark-grey w3-round">9,5€</span></h1>
+      <p class="w3-text-grey">Ciabatta toastée</p>
+      <hr>
+      
+      <h1><b>Une offre que vous ne pourrez pas refuser</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10,5€</span></h1>
+      <p class="w3-text-grey">Tomates, mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">à propos</h1>
+    <p>Maison fondée par M.Corleone en 1945 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><strong>Le Chef?</strong> M. Corleone lui-même<img src="https://www.regarder-films.net/wp-content/uploads/2017/10/the-godfather_2.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Nous sommes fiers de notre décoration intérieure.</p>
+    <img src="https://www.bakerycafe.it/wp-content/uploads/2020/10/Linea-WOOD-larice-Naturale-logo-2048x1102.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horaires d'ouverture</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lundi Fermé</p>
+        <p>Mardi et Mercredi 10.00 - 24.00</p>
+        <p>jeudi 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Vendredi 10:00 - 12:00</p>
+        <p>Samedi 10:00 - 23:00</p>
+        <p>Dimanche Fermé</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<img src="https://c1.staticflickr.com/7/6069/6080155627_ab87538792_b.jpg" class="w3-image w3-greyscale" style="width:100%;" height="330px" id="myMap">
+
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>Bordeaux, 05 56 00 00 00</p>
+    <p><span class="w3-tag">INFO!</span> Nous offrons un service traiteur pour tout type d'évènement de l'entrée au déssert.</p>
+    <p class="w3-xxlarge"><strong>Réserver</strong> une table, demander le plat du jour, ou nous envoyer un messsage</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nom" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Convives" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Requêtes particulières" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Envoyer un message</button></p>
+    </form>
+  </div>
+</div>
+
+
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
