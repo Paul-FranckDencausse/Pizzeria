@@ -173,18 +173,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 </footer>
 
 <script>
-
+//le script pour la modale 
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
   for (i = 0; i < x.length; i++) {
+    //pour fermer le menu
      x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
+    //faire disparaître le rouge
      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   document.getElementById(menuName).style.display = "block";
+  //ajouter de nouveau le rouge
   evt.currentTarget.firstElementChild.className += " w3-red";
 }
 document.getElementById("myLink").click();
