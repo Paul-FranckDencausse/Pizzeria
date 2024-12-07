@@ -8,7 +8,6 @@ Le Parrain est un site web de pizzeria en ligne, conçu pour offrir une expérie
 
 Le Parrain propose une variété de pizzas artisanales, de pâtes savoureuses et d'entrées délicieuses, le tout servi avec l'esprit de la tradition italienne.
 
-![Aperçu du site](https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 ## Fonctionnalités
 
